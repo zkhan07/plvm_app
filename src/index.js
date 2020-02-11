@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 // import "reflect-metadata";
-import Login from './components/Login';
+// import Login from './components/Login';
 import {HashRouter , Route} from 'react-router-dom';
 import Dashboard from './components/Dashboard';
 
@@ -27,8 +27,8 @@ import '@ionic/react/css/display.css';
 ReactDOM.render(
     <HashRouter>
 
-        <Route exact path='/' component={Login}/> 
-        <Route exact path='/user/dashboard/:device/' component={Dashboard}/> 
+        <Route exact path='/' component={Dashboard}/> 
+        {/* <Route exact path='/user/dashboard/:device/' component={Dashboard}/>  */}
        
     </HashRouter>    
     , document.getElementById('root'));

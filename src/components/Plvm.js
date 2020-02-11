@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Entry from "./Entry";
 import Exit from "./Exit";
 import { MyModal } from './Modal';
+import cycle from '../assets/cycle.jpg';
 import { checkVehicle, makeCustomerEntry } from './Service';
 
 import {
@@ -77,7 +78,7 @@ const Plvm = (props) => {
                 <IonContent>  
                     <div className="ui container">
                     <div className="ui image">
-                        <img src="cycle.jpg" />
+                        <img src={cycle} />
                     </div>
                     </div>
 

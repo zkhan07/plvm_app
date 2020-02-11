@@ -98,7 +98,7 @@ const Dashboard = () => {
     }
 
     if(redirectToLogin){
-       return( <Redirect to="/login/android"/>);
+       return( <Redirect to="/"/>);
     }
 
   return (
@@ -125,7 +125,7 @@ const Dashboard = () => {
             </IonRouterOutlet>
 
             <IonTabBar slot="bottom">
-              <IonTabButton tab="plvm" href="/plvm">
+              <IonTabButton tab="plvm" href="/plvm" active>
                 <IonIcon name="car" />
                 <IonLabel>PLVM</IonLabel>
               </IonTabButton>
